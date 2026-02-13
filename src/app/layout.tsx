@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
+  other: {
+    monetag: "a407d7a481a8df87a60b12d255c0cbd7",
+  },
 };
 
 export const viewport: Viewport = {
