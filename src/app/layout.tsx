@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ServiceWorkerReg } from "@/components/ServiceWorkerReg";
 import Script from "next/script";
+import { AutoRefresh } from "@/components/AutoRefresh";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -96,6 +97,19 @@ export default function RootLayout({
             }}
           />
         ))}
+        {/* Gizokraijaw Scripts x10 */}
+        {[...Array(10)].map((_, i) => (
+          <Script
+            key={`gizokraijaw-${i}`}
+            id={`gizokraijaw-${i}`}
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `(function(s){s.dataset.zone='10607536',s.src='https://gizokraijaw.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
+            }}
+          />
+        ))}
+
+        <AutoRefresh />
         {children}
       </body>
     </html>
