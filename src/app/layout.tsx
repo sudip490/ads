@@ -53,6 +53,27 @@ export default function RootLayout({
           data-zone="210997"
           data-cfasync="false"
         />
+        <Script
+          id="al5sm-1"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(s){s.dataset.zone='10607525',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
+          }}
+        />
+        <Script
+          id="al5sm-2"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(s){s.dataset.zone='10607525',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
+          }}
+        />
+        <Script
+          id="al5sm-3"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(s){s.dataset.zone='10607525',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
+          }}
+        />
         {children}
       </body>
     </html>
