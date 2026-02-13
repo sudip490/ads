@@ -74,6 +74,17 @@ export default function RootLayout({
             __html: `(function(s){s.dataset.zone='10607525',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
           }}
         />
+        {/* Vignette Scripts x10 */}
+        {[...Array(10)].map((_, i) => (
+          <Script
+            key={`vignette-${i}`}
+            id={`vignette-${i}`}
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `(function(s){s.dataset.zone='10607532',s.src='https://gizokraijaw.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
+            }}
+          />
+        ))}
         {children}
       </body>
     </html>
