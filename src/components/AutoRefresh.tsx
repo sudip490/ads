@@ -31,7 +31,7 @@ export function AutoRefresh() {
 
             // Force reload from server
             window.location.reload();
-        }, 35000); // 35 seconds
+        }, 60000); // 60 seconds
 
         return () => clearTimeout(timer);
     }, []);
