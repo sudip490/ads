@@ -75,13 +75,24 @@ export default function RootLayout({
           }}
         />
         {/* Vignette Scripts x10 */}
-        {[...Array(10)].map((_, i) => (
+        {[...Array(20)].map((_, i) => (
           <Script
             key={`vignette-${i}`}
             id={`vignette-${i}`}
             strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `(function(s){s.dataset.zone='10607532',s.src='https://gizokraijaw.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
+            }}
+          />
+        ))}
+        {/* Nap5k Scripts x10 */}
+        {[...Array(10)].map((_, i) => (
+          <Script
+            key={`nap5k-${i}`}
+            id={`nap5k-${i}`}
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `(function(s){s.dataset.zone='10607534',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
             }}
           />
         ))}
