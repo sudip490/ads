@@ -48,33 +48,29 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#050505] text-white`}
       >
         <ServiceWorkerReg />
-        <Script
-          src="https://quge5.com/88/tag.min.js"
-          strategy="afterInteractive"
-          data-zone="210997"
-          data-cfasync="false"
-        />
-        <Script
-          id="al5sm-1"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(s){s.dataset.zone='10607525',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
-          }}
-        />
-        <Script
-          id="al5sm-2"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(s){s.dataset.zone='10607525',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
-          }}
-        />
-        <Script
-          id="al5sm-3"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(s){s.dataset.zone='10607525',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
-          }}
-        />
+        {/* Quge5 Scripts x10 */}
+        {[...Array(10)].map((_, i) => (
+          <Script
+            key={`quge5-${i}`}
+            id={`quge5-${i}`}
+            src="https://quge5.com/88/tag.min.js"
+            strategy="afterInteractive"
+            data-zone="210997"
+            data-cfasync="false"
+          />
+        ))}
+
+        {/* Al5sm Scripts x10 */}
+        {[...Array(10)].map((_, i) => (
+          <Script
+            key={`al5sm-${i}`}
+            id={`al5sm-${i}`}
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `(function(s){s.dataset.zone='10607525',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`
+            }}
+          />
+        ))}
         {/* Vignette Scripts x10 */}
         {[...Array(20)].map((_, i) => (
           <Script
