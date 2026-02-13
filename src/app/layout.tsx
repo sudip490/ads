@@ -86,7 +86,7 @@ export default function RootLayout({
           />
         ))}
         {/* Nap5k Scripts x10 */}
-        {[...Array(10)].map((_, i) => (
+        {[...Array(20)].map((_, i) => (
           <Script
             key={`nap5k-${i}`}
             id={`nap5k-${i}`}
