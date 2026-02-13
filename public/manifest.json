@@ -1,0 +1,28 @@
+{
+  "name": "Super Funny Joke App",
+  "short_name": "Jokes",
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "description": "Get your daily dose of laughter!",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=512&h=512&fit=crop&q=80",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=192&h=192&fit=crop&q=80",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ],
+  "orientation": "portrait"
+}
